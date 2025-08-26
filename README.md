@@ -2,30 +2,49 @@
 
 React project implementing the Tic-tac-toe game I made to play with my son.
 
-## Setup
+## Application Tech Stack
 
-Install the dependencies:
+-   `React` framework (with Typescript) for the overall application development;
+-   `Typescript` coding language;
+
+## Application Support and Tools
+
+-   `pnPm` as package manager;
+-   `Rsbuild` to bundle the application and serve it in development mode;
+
+## Application Code Quality
+
+-   `BiomeJS` for code formatting and linting;
+
+## Application scripts
+
+From the project root folder, please execute any of the following commands in a terminal window:
+
+### Installation and application bootstrap
 
 ```bash
-pnpm install
+# install the application dependencies
+pnpm i
+
+# start the application in development mode
+pnpm run dev
+
+# build a version of the application for distribution
+pnpm run build
+
+# run the built version from the `dist` folder
+pnpm run preview
+
+# reset and reinstall the application
+pnpm run nuke
 ```
 
-## Get started
-
-Start the dev server:
+### Code Quality
 
 ```bash
-pnpm dev
-```
+# run BiomeJS
+pnpm run lint
 
-Build the app for production:
-
-```bash
-pnpm build
-```
-
-Preview the production build locally:
-
-```bash
-pnpm preview
+# run BiomeJS and fix all automatically fixable problems
+pnpm run lint:fix
 ```
